@@ -8,7 +8,7 @@ cd "$readerPath"
 processPDF() {
     echo "Processing book $2..."
     docker run -ti --rm -v `pwd`:/temp dodeeric/pdf2epubex pdf2epubEX $1
-    [[ -e 'mybook.pdf' ]] || rm mybook.pdf
+    [[ ! -e 'mybook.pdf' ]] || rm mybook.pdf
     for outputFile in *.epub
     do
         [[ -f "$outputFile" ]] || continue
