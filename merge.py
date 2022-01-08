@@ -8,7 +8,7 @@ import shutil
 customCSS = '''
 .d.m1 {
     border: none !important;
-    border-bottom: solid 1px #000 !important;
+    border-bottom: solid .2px #000 !important;
 }
 '''
 
