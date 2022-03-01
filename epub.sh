@@ -3,6 +3,10 @@ toolboxPath="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
     echo "Set a environmental variable \"readerPath\" to continue..."
     exit
 }
+[[ -x $toolboxPath/docpub ]] || {
+    echo "Docpub is not executable, try \"chmod +x $toolboxPath/docpub\" and continue..."
+    exit
+}
 cd "$readerPath"
 
 processPDF() {
