@@ -21,6 +21,8 @@ files = {
     'index': os.path.join(workingDirectory, sys.argv[2])
 }
 
+assert os.path.exists(files.values)
+
 for fileType, fileName in files.items():
     fileToUnzip = zipfile.ZipFile(fileName)
     fileToUnzip.extractall(fileType)
