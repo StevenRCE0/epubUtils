@@ -27,5 +27,5 @@ processPDF() {
 for file in *.pdf
 do
     [[ -f "$file" ]] || continue
-    processPDF $file "${file%.pdf}"
+    processPDF "$file" "${file%.pdf}"
 done
