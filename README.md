@@ -2,6 +2,8 @@
 
 This is a rough tool helping me converting all sorts of PDFs to EPUBs.
 
+> Paths with spaces may not work at the moment :-(
+
 Available for macOS, other systems may need their corresponding docpub distribution from PDFTron.
 
 ## Usage
